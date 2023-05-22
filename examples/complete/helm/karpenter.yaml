@@ -1,0 +1,6 @@
+instance_capacity_type: ["spot"]
+
+spec:
+  labels:
+    Management-Services: "true"
+    eks.amazonaws.com/nodegroup: "Management-ng"
