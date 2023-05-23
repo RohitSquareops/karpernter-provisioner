@@ -6,5 +6,4 @@ provisioner_name: "${provisioner_name}"
 
 spec:
   labels:
-    Services: "true"
     eks.amazonaws.com/nodegroup: "Services-ng"
