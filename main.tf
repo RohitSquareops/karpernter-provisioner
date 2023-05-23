@@ -1,5 +1,5 @@
 resource "helm_release" "karpenter_provisioner" {
-  name    = var.provisioner_name
+  name    = var.karpenter_config.provisioner_name
   chart   = "${path.module}/karpenter_provisioner/"
   timeout = 600
   values = [
