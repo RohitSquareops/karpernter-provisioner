@@ -12,7 +12,7 @@ spec:
       operator: NotIn
       values: {{ .Values.excluded_karpenter_ec2_instance_type }}
   providerRef:                                # optional, recommended to use instead of `provider`
-    name: karpenter-node-template-eck
+    name: {{ .Values.provisioner_name }}-node-template
   ttlSecondsAfterEmpty: 300                   # optional, but never scales down if not set
   # ttlSecondsUntilExpired: 600     # optional, but never expires if not set
 
